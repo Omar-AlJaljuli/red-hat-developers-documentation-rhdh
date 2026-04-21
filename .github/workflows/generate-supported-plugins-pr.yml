@@ -44,7 +44,11 @@ jobs:
 
       - name: Checkout repository
         if: steps.gate.outputs.run == 'true'
+<<<<<<< HEAD
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+=======
+        uses: actions/checkout@v4
+>>>>>>> b5e3653d45 (chore: update generate-supported-plugins to run weekly on 1.8, 1.9, and main)
         with:
           ref: ${{ matrix.target_branch }}
           fetch-depth: 0
@@ -72,7 +76,11 @@ jobs:
 
       - name: Create Pull Request
         if: steps.gate.outputs.run == 'true'
+<<<<<<< HEAD
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
+=======
+        uses: peter-evans/create-pull-request@v6
+>>>>>>> b5e3653d45 (chore: update generate-supported-plugins to run weekly on 1.8, 1.9, and main)
         with:
           commit-message: "chore: automated update of supported plugins list"
           title: "Automated update of supported plugins list for ${{ matrix.target_branch }}"
