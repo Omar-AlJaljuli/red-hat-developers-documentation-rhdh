@@ -85,7 +85,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |New Path ({product-very-short} 1.9+)
 
 |*3Scale*
-|3.10.0|`./dynamic-plugins/dist/backstage-community-plugin-3scale-backend`
+|3.13.0|`./dynamic-plugins/dist/backstage-community-plugin-3scale-backend`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-3scale-backend:<tag>`
 
 |*ArgoCD Backend*
@@ -101,11 +101,11 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-catalog-backend-module-azure-devops-annotator-processor:<tag>`
 
 |*Catalog Backend Module Bitbucket Cloud*
-|0.5.5|`./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-bitbucket-cloud`
+|0.5.8|`./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-bitbucket-cloud`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-catalog-backend-module-bitbucket-cloud:<tag>`
 
 |*Catalog Backend Module Bitbucket Server*
-|0.5.5|`./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-bitbucket-server`
+|0.5.8|`./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-bitbucket-server`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-catalog-backend-module-bitbucket-server:<tag>`
 
 |*Datadog*
@@ -113,7 +113,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/roadiehq-backstage-plugin-datadog:<tag>`
 
 |*Dynatrace*
-|10.12.1|`./dynamic-plugins/dist/backstage-community-plugin-dynatrace`
+|10.16.0|`./dynamic-plugins/dist/backstage-community-plugin-dynatrace`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-dynatrace:<tag>`
 
 |*GitHub Actions*
@@ -137,7 +137,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/immobiliarelabs-backstage-plugin-gitlab-backend:<tag>`
 
 |*JFrog Artifactory*
-|1.24.1|`./dynamic-plugins/dist/backstage-community-plugin-jfrog-artifactory`
+|1.28.0|`./dynamic-plugins/dist/backstage-community-plugin-jfrog-artifactory`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-jfrog-artifactory:<tag>`
 
 |*Jenkins Backend*
@@ -157,7 +157,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-lighthouse-backend:<tag>`
 
 |*Nexus Repository Manager*
-|1.19.4|`./dynamic-plugins/dist/backstage-community-plugin-nexus-repository-manager`
+|1.22.3|`./dynamic-plugins/dist/backstage-community-plugin-nexus-repository-manager`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-nexus-repository-manager:<tag>`
 
 |*PagerDuty Backend*
@@ -181,7 +181,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/roadiehq-scaffolder-backend-module-aws:<tag>`
 
 |*Scaffolder Backend Module Azure*
-|0.2.15|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-azure`
+|0.2.18|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-azure`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-azure:<tag>`
 
 |*Scaffolder Backend Module Azure DevOps*
@@ -189,11 +189,11 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-scaffolder-backend-module-azure-devops:<tag>`
 
 |*Scaffolder Backend Module Bitbucket Cloud*
-|0.2.15|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-bitbucket-cloud`
+|0.3.3|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-bitbucket-cloud`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-bitbucket-cloud:<tag>`
 
 |*Scaffolder Backend Module Bitbucket Server*
-|0.2.15|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-bitbucket-server`
+|0.2.18|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-bitbucket-server`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-bitbucket-server:<tag>`
 
 |*Scaffolder Backend Module DotNet*
@@ -201,7 +201,7 @@ include::{docdir}/artifacts/snip-tag-for-sha256-tip.adoc[]
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-scaffolder-backend-module-dotnet:<tag>`
 
 |*Scaffolder Backend Module Gerrit*
-|0.2.15|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gerrit`
+|0.2.18|`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gerrit`
 |`oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-gerrit:<tag>`
 
 |*Scaffolder Backend Module Quay*

@@ -71,13 +71,13 @@ include::../../artifacts/snip-technology-preview.adoc[]
 |`./dynamic-plugins/dist/backstage-plugin-notifications-backend-dynamic`
 
 
-|Orchestrator Backend Module Loki |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki/v/1.0.1[@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki]` |1.0.1 
+|Orchestrator Backend Module Loki |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki/v/1.2.1[@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki]` |1.2.1 
 |`oci://registry.access.redhat.com/rhdh/red-hat-developer-hub-backstage-plugin-orchestrator-backend-module-loki@sha256:4690f183eff37c90ffc893d385cbd04757c922a533035a7ae99674b633b41274`
 
 `LOKI_BASE_URL`
 
 
-|Pingidentity |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-pingidentity/v/0.9.0[@backstage-community/plugin-catalog-backend-module-pingidentity]` |0.9.0 
+|Pingidentity |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-pingidentity/v/0.11.0[@backstage-community/plugin-catalog-backend-module-pingidentity]` |0.11.0 
 |`./dynamic-plugins/dist/backstage-community-plugin-catalog-backend-module-pingidentity-dynamic`
 
 
