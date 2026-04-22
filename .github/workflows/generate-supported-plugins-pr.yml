@@ -6,7 +6,7 @@ on:
       branch:
         description: "Branch to run the script from"
         required: true
-        default: "main"
+        default: "release-1.8"
 
 jobs:
   run-script:
