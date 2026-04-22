@@ -9,13 +9,11 @@ on:
         default: "main"
   # Weekly: Monday 04:00 UTC (~ Sunday 11pm Eastern / 8pm Pacific). Scheduled workflows use the default branch YAML.
   schedule:
-    - cron: "0 4 * * 5"
+    - cron: "0 4 * * 4"
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    # On schedule, run every listed branch. On manual runs, only run for the branch that matches the selected input.
-    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && matrix.target_branch == github.event.inputs.branch)
     strategy:
       fail-fast: false
       matrix:
@@ -28,30 +26,50 @@ jobs:
           - target_branch: release-1.9
             script_path: modules/extend_dynamic-plugins-reference/rhdh-supported-plugins.sh
     steps:
+      # matrix is not available in job-level `if`, so we gate steps with this output instead.
+      - name: Decide whether this matrix leg should run
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          TARGET_BRANCH: ${{ matrix.target_branch }}
+          INPUT_BRANCH: ${{ github.event.inputs.branch }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ] || [ "$TARGET_BRANCH" = "$INPUT_BRANCH" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout repository
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           ref: ${{ matrix.target_branch }}
           fetch-depth: 0
 
       - name: Install PIP `yq`
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 -m pip install --upgrade pip
           pip install yq
           echo "Installed `yq` version: $(yq --version)"
 
       - name: Set up Git user
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Generate timestamp
+        if: steps.gate.outputs.run == 'true'
         run: echo "TIMESTAMP=$(date +'%Y%m%d-%H%M%S' -u)" >> $GITHUB_ENV
 
       - name: Run the script on branch
+        if: steps.gate.outputs.run == 'true'
         run: bash ${{ matrix.script_path }} -b ${{ matrix.target_branch }}
 
       - name: Create Pull Request
+        if: steps.gate.outputs.run == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "chore: automated update of supported plugins list"
