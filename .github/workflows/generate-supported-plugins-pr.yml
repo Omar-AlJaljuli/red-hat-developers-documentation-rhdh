@@ -10,7 +10,7 @@ on:
   # Weekly: Monday 04:00 UTC (~ Sunday 11pm Eastern / 8pm Pacific). Scheduled workflows use the default branch YAML.
   schedule:
     # change to "0 4 * * 1" 
-    - cron: "30 18 * * 3"
+    - cron: "10 19 * * 3"
 
 jobs:
   run-script:
@@ -23,7 +23,7 @@ jobs:
           - target_branch: main
             script_path: modules/extend_dynamic-plugins-reference/rhdh-supported-plugins.sh
           - target_branch: release-1.8
-            script_path: modules/dynamic-plugins-reference/rhdh-supported-plugins.sh
+            script_path: modules/dynamic-plugins/rhdh-supported-plugins.sh
           - target_branch: release-1.9
             script_path: modules/extend_dynamic-plugins-reference/rhdh-supported-plugins.sh
     steps:
