@@ -250,9 +250,10 @@ generate_dynamic_plugins_table() {
       [[ $Path == "oci://quay.io/rhdh/"* ]] || [[ $Path == "oci://registry.access.redhat.com/rhdh/"* ]] || \
         { debug "Skip[1] Path = $Path\n"; continue; }
 
-      # Filter 2: Exclude oci://ghcr.io/ community paths;
-      [[ $Path == "oci://ghcr.io/"* ]] && \
-        { debug "Skip[2] Path = $Path\n"; continue; }
+      # Filter 2: Exclude community-supported plugins;
+      support=$(yq -r '.spec.support // "unknown"' "$y")
+      [[ $support == "community"* ]] || [[ $support == "dev-preview"* ]] && \
+        { debug "Skip[2] Support = $support\n"; continue; }
 
       # DEPRECATED :: Filter 3: Handle @redhat packages - exclude unless they have dynamicArtifact from NRRC registry
       # Plugin = @red-hat-developer-hub/backstage-plugin-orchestrator
@@ -307,7 +308,6 @@ generate_dynamic_plugins_table() {
           Support_Level="Community Support"
           # Check for Red Hat authorship and support level
           author=$(yq -r '.spec.author // "unknown"' "$y")
-          support=$(yq -r '.spec.support // "unknown"' "$y")
 
           # only RH authoried content should show up as GA
           # exception for the Roadie http-request scaffolder, too
