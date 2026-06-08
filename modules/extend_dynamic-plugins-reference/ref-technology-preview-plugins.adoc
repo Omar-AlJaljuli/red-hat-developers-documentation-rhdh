@@ -6,57 +6,64 @@
 = {company-name} {technology-preview} plugins
 
 [role="_abstract"]
-{company-name} provides {technology-preview} support for the following 14 plugins.
+{company-name} provides {technology-preview} support for the following 16 plugins.
 
 include::../../artifacts/snip-technology-preview.adoc[]
 
 [%header,cols=4*]
 |===
 |*Name* |*Plugin* |*Version* |*Path and required variables*
-|ACR |`https://npmjs.com/package/@backstage-community/plugin-acr/v/1.24.1[@backstage-community/plugin-acr]` |1.24.1 
+|ACR |`https://npmjs.com/package/@backstage-community/plugin-acr/v/[@backstage-community/plugin-acr]` | 
 |`./dynamic-plugins/dist/backstage-community-plugin-acr`
 
 
-|Bulk Import |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-bulk-import/v/7.3.5[@red-hat-developer-hub/backstage-plugin-bulk-import]` |7.3.5 
+|Bulk Import |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-bulk-import/v/[@red-hat-developer-hub/backstage-plugin-bulk-import]` | 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import`
 
 
-|Bulk Import |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-bulk-import-backend/v/7.3.5[@red-hat-developer-hub/backstage-plugin-bulk-import-backend]` |7.3.5 
+|Bulk Import |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-bulk-import-backend/v/[@red-hat-developer-hub/backstage-plugin-bulk-import-backend]` | 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import-backend-dynamic`
 
-|Events Backend Module GitHub |`https://npmjs.com/package/@backstage/plugin-events-backend-module-github/v/0.4.10[@backstage/plugin-events-backend-module-github]` |0.4.10 
-|`oci://registry.access.redhat.com/rhdh/backstage-plugin-events-backend-module-github@sha256:c1d17d47aaac41eaeb3ad15c64d904cbad7d93f351cdd69d7aee13b2097329ed`
+
+|Events Backend Module GitHub |`https://npmjs.com/package/@backstage/plugin-events-backend-module-github/v/[@backstage/plugin-events-backend-module-github]` | 
+|`oci://registry.access.redhat.com/rhdh/backstage-plugin-events-backend-module-github@sha256:aaab9431194fbf3f582ceffcd9af2f8bc8dc3a8744789648a8a00cfbe7bae4f8`
 
 `GITHUB_WEBHOOK_SECRET`
-|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-extensions/v/0.17.1[@red-hat-developer-hub/backstage-plugin-extensions]` |0.17.1 
+
+
+|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-extensions/v/[@red-hat-developer-hub/backstage-plugin-extensions]` | 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-extensions`
 
 
-|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-catalog-backend-module-extensions/v/0.17.1[@red-hat-developer-hub/backstage-plugin-catalog-backend-module-extensions]` |0.17.1 
+|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-catalog-backend-module-extensions/v/[@red-hat-developer-hub/backstage-plugin-catalog-backend-module-extensions]` | 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-catalog-backend-module-extensions-dynamic`
 
 `RHDH_EXTENSIONS_DIRECTORY`
 
 
-|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-extensions-backend/v/0.17.1[@red-hat-developer-hub/backstage-plugin-extensions-backend]` |0.17.1 
+|Extensions |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-extensions-backend/v/[@red-hat-developer-hub/backstage-plugin-extensions-backend]` | 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-extensions-backend-dynamic`
 
 `RHDH_EXTENSIONS_INSTALL_EXPORT_PATH`
 
 
-|GitLab |`https://npmjs.com/package/@backstage/plugin-scaffolder-backend-module-gitlab/v/0.11.4[@backstage/plugin-scaffolder-backend-module-gitlab]` |0.11.4 
+|GitLab |`https://npmjs.com/package/@backstage/plugin-scaffolder-backend-module-gitlab/v/[@backstage/plugin-scaffolder-backend-module-gitlab]` | 
 |`./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic`
 
 
-|Kubernetes |`https://npmjs.com/package/@backstage/plugin-kubernetes/v/0.12.17[@backstage/plugin-kubernetes]` |0.12.17 
+|Homepage |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-homepage-backend/v/[@red-hat-developer-hub/backstage-plugin-homepage-backend]` | 
+|`oci://registry.access.redhat.com/rhdh/red-hat-developer-hub-backstage-plugin-homepage-backend@sha256:25fa6f09850bad2d2b3b7a2323710a8793b697ab49cd0daa4385bd98dcfa4d07`
+
+
+|Kubernetes |`https://npmjs.com/package/@backstage/plugin-kubernetes/v/[@backstage/plugin-kubernetes]` | 
 |`./dynamic-plugins/dist/backstage-plugin-kubernetes`
 
 
-|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications/v/0.5.15[@backstage/plugin-notifications]` |0.5.15 
+|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications/v/[@backstage/plugin-notifications]` | 
 |`./dynamic-plugins/dist/backstage-plugin-notifications`
 
 
-|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications-backend-module-email/v/0.3.19[@backstage/plugin-notifications-backend-module-email]` |0.3.19 
+|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications-backend-module-email/v/[@backstage/plugin-notifications-backend-module-email]` | 
 |`./dynamic-plugins/dist/backstage-plugin-notifications-backend-module-email-dynamic`
 
 `EMAIL_HOSTNAME`
@@ -68,11 +75,11 @@ include::../../artifacts/snip-technology-preview.adoc[]
 `EMAIL_USERNAME`
 
 
-|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications-backend/v/0.6.3[@backstage/plugin-notifications-backend]` |0.6.3 
+|Notifications |`https://npmjs.com/package/@backstage/plugin-notifications-backend/v/[@backstage/plugin-notifications-backend]` | 
 |`./dynamic-plugins/dist/backstage-plugin-notifications-backend-dynamic`
 
 
-|Pingidentity |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-pingidentity/v/0.11.1[@backstage-community/plugin-catalog-backend-module-pingidentity]` |0.11.1 
+|Pingidentity |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-pingidentity/v/[@backstage-community/plugin-catalog-backend-module-pingidentity]` | 
 |`./dynamic-plugins/dist/backstage-community-plugin-catalog-backend-module-pingidentity-dynamic`
 
 `PING_IDENTITY_API_BASE_URL`
@@ -86,11 +93,11 @@ include::../../artifacts/snip-technology-preview.adoc[]
 `PING_IDENTITY_ENV_ID`
 
 
-|Scaffolder Relation Processor |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-scaffolder-relation-processor/v/2.14.2[@backstage-community/plugin-catalog-backend-module-scaffolder-relation-processor]` |2.14.2 
+|Scaffolder Relation Processor |`https://npmjs.com/package/@backstage-community/plugin-catalog-backend-module-scaffolder-relation-processor/v/[@backstage-community/plugin-catalog-backend-module-scaffolder-relation-processor]` | 
 |`./dynamic-plugins/dist/backstage-community-plugin-catalog-backend-module-scaffolder-relation-processor-dynamic`
 
 
-|Signals |`https://npmjs.com/package/@backstage/plugin-signals/v/0.0.29[@backstage/plugin-signals]` |0.0.29 
+|Signals |`https://npmjs.com/package/@backstage/plugin-signals/v/[@backstage/plugin-signals]` | 
 |`./dynamic-plugins/dist/backstage-plugin-signals`
 
 
