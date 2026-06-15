@@ -149,7 +149,7 @@
 |`oci://registry.access.redhat.com/rhdh/red-hat-developer-hub-backstage-plugin-orchestrator-backend@sha256:5e2e95950c3112a10c23c0fddae86b257d0cc16f9cde3dd2fc945b6a7be5f7c5`
 
 
-|Quick start |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-quickstart/v/1.9.6[@red-hat-developer-hub/backstage-plugin-quickstart]` |1.9.6 
+|Quickstart |`https://npmjs.com/package/@red-hat-developer-hub/backstage-plugin-quickstart/v/1.9.6[@red-hat-developer-hub/backstage-plugin-quickstart]` |1.9.6 
 |`./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-quickstart`
 
 
